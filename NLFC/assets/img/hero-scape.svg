@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" role="img" aria-label="Illustration of rolling Kentucky hills and pine trees">
+  <defs>
+    <linearGradient id="ridgeBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#016a93"/>
+      <stop offset="100%" stop-color="#0a5a86"/>
+    </linearGradient>
+    <linearGradient id="ridgeMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f8f3a"/>
+      <stop offset="100%" stop-color="#237a33"/>
+    </linearGradient>
+    <linearGradient id="ridgeFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#63b423"/>
+      <stop offset="100%" stop-color="#4f9f22"/>
+    </linearGradient>
+
+    <g id="pine">
+      <path d="M0 0 L-19 0 L-10.5 -21 L-15 -21 L-7.5 -40 L-12 -40 L0 -66 L12 -40 L7.5 -40 L15 -21 L10.5 -21 L19 0 Z"/>
+    </g>
+  </defs>
+
+  <!-- distant ridge -->
+  <path fill="url(#ridgeBack)"
+        d="M0 152 C 120 118, 210 106, 318 128 C 430 151, 505 96, 620 104 C 742 112, 812 74, 930 92 C 1046 110, 1140 84, 1244 100 C 1330 113, 1392 132, 1440 124 L1440 300 L0 300 Z"/>
+
+  <!-- distant trees -->
+  <g fill="#0b4f7a" opacity="0.55">
+    <use href="#pine" transform="translate(196,138) scale(0.42)"/>
+    <use href="#pine" transform="translate(232,142) scale(0.34)"/>
+    <use href="#pine" transform="translate(884,104) scale(0.4)"/>
+    <use href="#pine" transform="translate(918,100) scale(0.32)"/>
+    <use href="#pine" transform="translate(1290,110) scale(0.38)"/>
+  </g>
+
+  <!-- middle ridge -->
+  <path fill="url(#ridgeMid)"
+        d="M0 196 C 96 172, 178 160, 286 178 C 392 196, 470 152, 578 162 C 690 172, 760 142, 872 158 C 988 175, 1074 148, 1188 164 C 1288 178, 1372 196, 1440 186 L1440 300 L0 300 Z"/>
+
+  <!-- middle trees -->
+  <g fill="#0e5a2e">
+    <use href="#pine" transform="translate(92,184) scale(0.6)"/>
+    <use href="#pine" transform="translate(134,190) scale(0.46)"/>
+    <use href="#pine" transform="translate(520,168) scale(0.55)"/>
+    <use href="#pine" transform="translate(556,174) scale(0.42)"/>
+    <use href="#pine" transform="translate(1010,168) scale(0.5)"/>
+    <use href="#pine" transform="translate(1046,172) scale(0.62)"/>
+    <use href="#pine" transform="translate(1400,190) scale(0.5)"/>
+  </g>
+
+  <!-- front ridge -->
+  <path fill="url(#ridgeFront)"
+        d="M0 240 C 130 214, 236 206, 352 222 C 470 238, 566 206, 686 214 C 806 222, 890 200, 1012 214 C 1128 227, 1240 246, 1348 236 C 1392 232, 1420 230, 1440 232 L1440 300 L0 300 Z"/>
+
+  <!-- foreground band: matches the page background so the hills meet the page -->
+  <path fill="#fdfaf2"
+        d="M0 278 C 150 262, 268 258, 390 268 C 520 279, 630 258, 762 264 C 892 270, 986 254, 1110 264 C 1226 273, 1340 284, 1440 276 L1440 300 L0 300 Z"/>
+
+  <!-- foreground pines standing along the near edge -->
+  <g fill="#03532f">
+    <use href="#pine" transform="translate(48,276) scale(0.92)"/>
+    <use href="#pine" transform="translate(104,280) scale(0.68)"/>
+    <use href="#pine" transform="translate(146,282) scale(0.5)"/>
+    <use href="#pine" transform="translate(636,264) scale(0.72)"/>
+    <use href="#pine" transform="translate(682,266) scale(0.55)"/>
+    <use href="#pine" transform="translate(1268,278) scale(0.6)"/>
+    <use href="#pine" transform="translate(1330,282) scale(0.86)"/>
+    <use href="#pine" transform="translate(1386,284) scale(0.64)"/>
+  </g>
+</svg>
