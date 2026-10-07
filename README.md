@@ -9,7 +9,8 @@ or drop the whole folder onto Netlify / GitHub Pages / any web host.
 | --- | --- |
 | `index.html` | Home — hero, service times, vision, pastor intro, first-visit steps |
 | `about.html` | Our Vision (full text from `content/Our Vision.txt`) |
-| `pastor.html` | Meet Our Pastor (full text from `content/My Pastor.txt`), plus Luke, Jon & Nic |
+| `pastor.html` | Meet Our Pastors — Will & Stephanie (merged from `content/My Pastor.txt` and `moms-bio.txt`), plus Luke, Jon & Nic |
+| `events.html` | Events calendar — month view plus an upcoming-events list |
 | `visit.html` | Service times, what a Sunday looks like, FAQ |
 | `contact.html` | Church details, phone, Facebook, map |
 
@@ -18,6 +19,7 @@ or drop the whole folder onto Netlify / GitHub Pages / any web host.
 ```
 assets/css/styles.css     all styling; design tokens are at the top
 assets/js/main.js         mobile nav, sticky header, hero sunrise, scroll reveal, year
+assets/js/events.js       events calendar — edit the event list at the top of this file
 assets/img/logo.png       the church logo (supplied, full size — source file, not loaded by pages)
 assets/img/logo-128.png   header/footer logo (resized from logo.png)
 assets/img/favicon-32.png, apple-touch-icon.png, logo-512.png   browser/phone icons
@@ -44,10 +46,22 @@ and `visit.html`) use the logo's teal-blue mountains (`#016a93`), green hills
 
 Change a value in `:root` and it updates everywhere.
 
+## Adding events
+
+Open `assets/js/events.js`. Sunday Worship and Wednesday Bible Study repeat
+automatically. For a one-off event, add a line to `SPECIAL_EVENTS`:
+
+```js
+{ date: '2026-12-24', time: '6:00 PM', title: 'Christmas Eve Service', note: 'Bring the whole family.' },
+```
+
+Special events show in gold. To skip a weekly service on a given day, add its
+date (`'2026-11-25'`) to `CANCELLED`.
+
 ## Before this goes live — placeholders to replace
 
 These are invented stand-ins, not real church data. Search and replace each
-across all five HTML files:
+across all six HTML files:
 
 - **Facebook link** — the Facebook icon in every footer (and the link on
   `contact.html`) points at `#`. Search for `aria-label="Facebook"` and replace

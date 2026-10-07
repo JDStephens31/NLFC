@@ -29,7 +29,7 @@
     });
 
     // Reset state if the viewport grows past the mobile breakpoint.
-    var wide = window.matchMedia('(min-width: 901px)');
+    var wide = window.matchMedia('(min-width: 1081px)');
     var onChange = function (e) { if (e.matches) setOpen(false); };
     if (wide.addEventListener) wide.addEventListener('change', onChange);
     else wide.addListener(onChange);
